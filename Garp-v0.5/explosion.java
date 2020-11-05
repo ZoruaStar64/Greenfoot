@@ -10,6 +10,8 @@ public class explosion extends Actor
 {
            
     private GreenfootImage[] images;
+    private int action,increment;
+    private boolean geluid;
             
     /**
      * Act - do whatever the explosion wants to do. This method is called whenever
@@ -17,6 +19,21 @@ public class explosion extends Actor
      */
     public void act() 
     {
+        setImage(images[action]);
+        action += increment;
+        geluid = true;
+        if(geluid) {
+            Greenfoot.playSound("explosion.wav");
+            geluid = false;
+        }
+        if(action > 7) {
+            increment = -1;
+            action += increment;
+        }
+        if(action < 0) {
+            getWorld().removeObject(this);
+            Greenfoot.stop();
+        }
         
     }  
     public explosion(){
@@ -25,7 +42,7 @@ public class explosion extends Actor
         baseSize = baseImage.getWidth();
         images = new GreenfootImage[8];
         verschil = baseSize / 8;
-        int increment = 1;
+        increment = 1;
         size = 0;
         for(teller = 0; teller < 8; teller++){
             size += verschil;

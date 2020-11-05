@@ -36,6 +36,17 @@ public class Garp extends Actor
             world.removeObject(diamond);
         }
     }
+    public void foundBomb()
+    {
+        Actor Bomb;
+        
+        Bomb = getOneObjectAtOffset(0,0, Bomb.class);
+        if(Bomb != null) {
+            getWorld().removeObject(Bomb);
+            getWorld().addObject(new explosion(),getX(), getY());
+            getWorld().removeObject(this);
+        }
+    }
     protected void movingAndTurning()
     {
         if(Greenfoot.isKeyDown("left")) {
@@ -79,7 +90,6 @@ public class Garp extends Actor
                  move(-5);
             }
         }
-       
     }
     
     /**
@@ -90,5 +100,6 @@ public class Garp extends Actor
     {
         movingAndTurning();
         collectingDiamonds();
+        foundBomb();
     }    
 }
