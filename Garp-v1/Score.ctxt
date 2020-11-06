@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Score
+comment1.params=image\ tekst
+comment1.target=java.awt.Dimension\ getTextDimensions(greenfoot.GreenfootImage,\ java.lang.String)
+comment1.text=\r\n\ De\ methode\ getTextDimensions\ berekent\ de\ breedte\ en\ de\ hoogte\ van\ de\ string\ in\r\n\ pixels.\r\n\r\n\ @param\ image\ De\ Greenfootimage\ waarin\ de\ string\ wordt\ geplaatst.\r\n\ @param\ tekst\ de\ String\ waarvan\ de\ breedte\ en\ de\ hoogte\ wordt\ berekend.\r\n\ @return\ Dimension\ met\ daarin\ de\ breedte\ en\ de\ hoogte\ van\ de\ string\r\n
+numComments=2
