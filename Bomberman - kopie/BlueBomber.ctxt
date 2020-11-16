@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BlueBomber
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BlueBomber\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=BlueBomber()
+comment2.params=
+comment2.target=boolean\ foundUnbreakableBlock()
+comment3.params=
+comment3.target=boolean\ foundBreakableBlock()
+comment4.params=
+comment4.target=void\ placeBomb()
+comment5.params=
+comment5.target=void\ movingAndTurning()
+comment6.params=
+comment6.target=void\ act()
+comment6.text=\r\n\ Act\ -\ do\ whatever\ the\ BlueBomber\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=7
